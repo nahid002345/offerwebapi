@@ -1,0 +1,270 @@
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\ApplicationInsights.config
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\csc.exe
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\vbc.exe
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.dll.config
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.pdb
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Antlr3.Runtime.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\EntityFramework.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Web.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Owin.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Helpers.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Mvc.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Optimization.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Razor.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\WebGrease.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Web.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Helpers.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Mvc.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Optimization.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Razor.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Antlr3.Runtime.pdb
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\EntityFramework.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.dll
+C:\Users\Nahid\Documents\Visual Studio 2015\Projects\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.pdb
+E:\Web App\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.csprojResolveAssemblyReference.cache
+E:\Web App\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.pdb
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\ApplicationInsights.config
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\csc.exe
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\vbc.exe
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\VBCSCompiler.exe
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.dll.config
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.pdb
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Antlr3.Runtime.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\EntityFramework.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\EntityFramework.SqlServer.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.DependencyCollector.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Web.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.WindowsServer.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.ApplicationInsights.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Google.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Newtonsoft.Json.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Owin.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Net.Http.Formatting.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Helpers.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.Owin.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.WebHost.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Mvc.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Optimization.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Razor.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Deployment.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Razor.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\WebGrease.dll
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.DependencyCollector.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Web.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.WindowsServer.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.ApplicationInsights.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Newtonsoft.Json.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Net.Http.Formatting.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Helpers.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.WebHost.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Mvc.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Optimization.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Razor.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Deployment.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Razor.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Antlr3.Runtime.pdb
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\EntityFramework.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\EntityFramework.SqlServer.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Google.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Web App\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.Owin.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\ApplicationInsights.config
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\csc.exe
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\System.Collections.Immutable.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\vbc.exe
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\VBCSCompiler.exe
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\roslyn\VBCSCompiler.exe.config
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.dll.config
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\OfferWebAPI.pdb
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Antlr3.Runtime.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\EntityFramework.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\EntityFramework.SqlServer.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.DependencyCollector.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Web.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.WindowsServer.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.ApplicationInsights.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Google.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Web.Infrastructure.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Newtonsoft.Json.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Owin.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Net.Http.Formatting.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Helpers.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.Owin.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.WebHost.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Mvc.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Optimization.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Razor.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Deployment.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Razor.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\WebGrease.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.DependencyCollector.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.Web.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AI.WindowsServer.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.ApplicationInsights.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Newtonsoft.Json.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Net.Http.Formatting.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Helpers.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.WebHost.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Mvc.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Optimization.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Razor.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Deployment.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.WebPages.Razor.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Antlr3.Runtime.pdb
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\EntityFramework.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\EntityFramework.SqlServer.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Google.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\bin\System.Web.Http.Owin.xml
+G:\Personal\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.csprojResolveAssemblyReference.cache
+G:\Personal\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.dll
+G:\Personal\OfferWebAPI\OfferWebAPI\obj\Release\OfferWebAPI.pdb

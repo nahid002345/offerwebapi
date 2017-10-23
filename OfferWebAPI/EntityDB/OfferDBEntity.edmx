@@ -1,0 +1,1250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OFFERDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="OfferAvailOutlet">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OfferId" Type="bigint" Nullable="false" />
+          <Property Name="OutletID" Type="bigint" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OfferCategory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CategoryIcon" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OfferCatLocMap">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryID" Type="bigint" Nullable="false" />
+          <Property Name="LocationID" Type="bigint" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" />
+          <Property Name="CreatedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OfferFeedback">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeviceID" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="80" />
+          <Property Name="Comment" Type="nvarchar" MaxLength="500" />
+          <Property Name="CreatedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OfferLocation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OfferLocOutletMap">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="bigint" Nullable="false" />
+          <Property Name="LocationID" Type="bigint" Nullable="false" />
+          <Property Name="OutletName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="OutletAddress" Type="nvarchar(max)" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="OfferReview">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeviceID" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="OfferReviewerName" Type="nvarchar(max)" />
+          <Property Name="OfferID" Type="bigint" Nullable="false" />
+          <Property Name="OfferReview" Type="int" />
+          <Property Name="OfferIsFollow" Type="bit" />
+          <Property Name="OfferIsFavorite" Type="bit" />
+          <Property Name="OfferReviewComment" Type="nvarchar(max)" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OffersInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PostName" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="OfferCat" Type="bigint" Nullable="false" />
+          <Property Name="OfferLoc" Type="bigint" Nullable="false" />
+          <Property Name="OfferStartDate" Type="datetime" Nullable="false" />
+          <Property Name="OfferEndDate" Type="datetime" Nullable="false" />
+          <Property Name="OfferDiscountAmt" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="OfferStatus" Type="bigint" Nullable="false" />
+          <Property Name="OfferDetails" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OfferImagePath" Type="nvarchar(max)" />
+          <Property Name="OfferFeatureVal" Type="bigint" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OfferView">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeviceID" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="OfferID" Type="bigint" Nullable="false" />
+          <Property Name="OfferIsView" Type="bit" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="SysEnum">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EnumType" Type="int" Nullable="false" />
+          <Property Name="EnumName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EnumValue" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SysUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserType" Type="bigint" Nullable="false" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="ContactNo" Type="nvarchar(max)" />
+          <Property Name="Website" Type="nvarchar(max)" />
+          <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CompanyLogoUrl" Type="nvarchar(max)" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="bigint" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_Offer_Cat_LocMap_OfferCategory">
+          <End Role="OfferCategory" Type="Self.OfferCategory" Multiplicity="1" />
+          <End Role="OfferCatLocMap" Type="Self.OfferCatLocMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferCategory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferCatLocMap">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Offer_Cat_LocMap_OfferLocation">
+          <End Role="OfferLocation" Type="Self.OfferLocation" Multiplicity="1" />
+          <End Role="OfferCatLocMap" Type="Self.OfferCatLocMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferLocation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferCatLocMap">
+              <PropertyRef Name="LocationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferAvailOutlet_OfferLocOutletMap">
+          <End Role="OfferLocOutletMap" Type="Self.OfferLocOutletMap" Multiplicity="1" />
+          <End Role="OfferAvailOutlet" Type="Self.OfferAvailOutlet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferLocOutletMap">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferAvailOutlet">
+              <PropertyRef Name="OutletID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferAvailOutlet_OffersInfo">
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="1" />
+          <End Role="OfferAvailOutlet" Type="Self.OfferAvailOutlet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OffersInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferAvailOutlet">
+              <PropertyRef Name="OfferId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferCategory_SysUser">
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="1" />
+          <End Role="OfferCategory" Type="Self.OfferCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferCategory">
+              <PropertyRef Name="CreatedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferCategory_SysUserModified">
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="0..1" />
+          <End Role="OfferCategory" Type="Self.OfferCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferCategory">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocation_SysUserCreated">
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="1" />
+          <End Role="OfferLocation" Type="Self.OfferLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocation">
+              <PropertyRef Name="CreatedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocation_SysUserModified">
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="0..1" />
+          <End Role="OfferLocation" Type="Self.OfferLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocation">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocOutletMap_OfferLocation">
+          <End Role="OfferLocation" Type="Self.OfferLocation" Multiplicity="1" />
+          <End Role="OfferLocOutletMap" Type="Self.OfferLocOutletMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferLocation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocOutletMap">
+              <PropertyRef Name="LocationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocOutletMap_SysUser">
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="1" />
+          <End Role="OfferLocOutletMap" Type="Self.OfferLocOutletMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocOutletMap">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocOutletMap_SysUserModified">
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="0..1" />
+          <End Role="OfferLocOutletMap" Type="Self.OfferLocOutletMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocOutletMap">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferReview_OffersInfo">
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="1" />
+          <End Role="OfferReview" Type="Self.OfferReview" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OffersInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferReview">
+              <PropertyRef Name="OfferID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_OfferCategory">
+          <End Role="OfferCategory" Type="Self.OfferCategory" Multiplicity="1" />
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferCategory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="OfferCat" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_OfferLocation">
+          <End Role="OfferLocation" Type="Self.OfferLocation" Multiplicity="1" />
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferLocation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="OfferLoc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_SysEnum">
+          <End Role="SysEnum" Type="Self.SysEnum" Multiplicity="1" />
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysEnum">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="OfferStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_SysEnum1">
+          <End Role="SysEnum" Type="Self.SysEnum" Multiplicity="0..1" />
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysEnum">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="OfferFeatureVal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_SysUser">
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="1" />
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="CreatedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_SysUserModified">
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="0..1" />
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferView_OffersInfo">
+          <End Role="OffersInfo" Type="Self.OffersInfo" Multiplicity="1" />
+          <End Role="OfferView" Type="Self.OfferView" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OffersInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferView">
+              <PropertyRef Name="OfferID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SysUser_SysEnum">
+          <End Role="SysEnum" Type="Self.SysEnum" Multiplicity="1" />
+          <End Role="SysUser" Type="Self.SysUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysEnum">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SysUser">
+              <PropertyRef Name="UserType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OFFERDBModelStoreContainer">
+          <EntitySet Name="OfferAvailOutlet" EntityType="Self.OfferAvailOutlet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OfferCategory" EntityType="Self.OfferCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OfferCatLocMap" EntityType="Self.OfferCatLocMap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OfferFeedback" EntityType="Self.OfferFeedback" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OfferLocation" EntityType="Self.OfferLocation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OfferLocOutletMap" EntityType="Self.OfferLocOutletMap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OfferReview" EntityType="Self.OfferReview" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OffersInfo" EntityType="Self.OffersInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OfferView" EntityType="Self.OfferView" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SysEnum" EntityType="Self.SysEnum" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SysUser" EntityType="Self.SysUser" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Offer_Cat_LocMap_OfferCategory" Association="Self.FK_Offer_Cat_LocMap_OfferCategory">
+            <End Role="OfferCategory" EntitySet="OfferCategory" />
+            <End Role="OfferCatLocMap" EntitySet="OfferCatLocMap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Offer_Cat_LocMap_OfferLocation" Association="Self.FK_Offer_Cat_LocMap_OfferLocation">
+            <End Role="OfferLocation" EntitySet="OfferLocation" />
+            <End Role="OfferCatLocMap" EntitySet="OfferCatLocMap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferAvailOutlet_OfferLocOutletMap" Association="Self.FK_OfferAvailOutlet_OfferLocOutletMap">
+            <End Role="OfferLocOutletMap" EntitySet="OfferLocOutletMap" />
+            <End Role="OfferAvailOutlet" EntitySet="OfferAvailOutlet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferAvailOutlet_OffersInfo" Association="Self.FK_OfferAvailOutlet_OffersInfo">
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+            <End Role="OfferAvailOutlet" EntitySet="OfferAvailOutlet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferCategory_SysUser" Association="Self.FK_OfferCategory_SysUser">
+            <End Role="SysUser" EntitySet="SysUser" />
+            <End Role="OfferCategory" EntitySet="OfferCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferCategory_SysUserModified" Association="Self.FK_OfferCategory_SysUserModified">
+            <End Role="SysUser" EntitySet="SysUser" />
+            <End Role="OfferCategory" EntitySet="OfferCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocation_SysUserCreated" Association="Self.FK_OfferLocation_SysUserCreated">
+            <End Role="SysUser" EntitySet="SysUser" />
+            <End Role="OfferLocation" EntitySet="OfferLocation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocation_SysUserModified" Association="Self.FK_OfferLocation_SysUserModified">
+            <End Role="SysUser" EntitySet="SysUser" />
+            <End Role="OfferLocation" EntitySet="OfferLocation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocOutletMap_OfferLocation" Association="Self.FK_OfferLocOutletMap_OfferLocation">
+            <End Role="OfferLocation" EntitySet="OfferLocation" />
+            <End Role="OfferLocOutletMap" EntitySet="OfferLocOutletMap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocOutletMap_SysUser" Association="Self.FK_OfferLocOutletMap_SysUser">
+            <End Role="SysUser" EntitySet="SysUser" />
+            <End Role="OfferLocOutletMap" EntitySet="OfferLocOutletMap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocOutletMap_SysUserModified" Association="Self.FK_OfferLocOutletMap_SysUserModified">
+            <End Role="SysUser" EntitySet="SysUser" />
+            <End Role="OfferLocOutletMap" EntitySet="OfferLocOutletMap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferReview_OffersInfo" Association="Self.FK_OfferReview_OffersInfo">
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+            <End Role="OfferReview" EntitySet="OfferReview" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_OfferCategory" Association="Self.FK_OffersInfo_OfferCategory">
+            <End Role="OfferCategory" EntitySet="OfferCategory" />
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_OfferLocation" Association="Self.FK_OffersInfo_OfferLocation">
+            <End Role="OfferLocation" EntitySet="OfferLocation" />
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_SysEnum" Association="Self.FK_OffersInfo_SysEnum">
+            <End Role="SysEnum" EntitySet="SysEnum" />
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_SysEnum1" Association="Self.FK_OffersInfo_SysEnum1">
+            <End Role="SysEnum" EntitySet="SysEnum" />
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_SysUser" Association="Self.FK_OffersInfo_SysUser">
+            <End Role="SysUser" EntitySet="SysUser" />
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_SysUserModified" Association="Self.FK_OffersInfo_SysUserModified">
+            <End Role="SysUser" EntitySet="SysUser" />
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferView_OffersInfo" Association="Self.FK_OfferView_OffersInfo">
+            <End Role="OffersInfo" EntitySet="OffersInfo" />
+            <End Role="OfferView" EntitySet="OfferView" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SysUser_SysEnum" Association="Self.FK_SysUser_SysEnum">
+            <End Role="SysEnum" EntitySet="SysEnum" />
+            <End Role="SysUser" EntitySet="SysUser" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OFFERDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="OFFERDBEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="OfferAvailOutlets" EntityType="OFFERDBModel.OfferAvailOutlet" />
+          <EntitySet Name="OfferCategories" EntityType="OFFERDBModel.OfferCategory" />
+          <EntitySet Name="OfferCatLocMaps" EntityType="OFFERDBModel.OfferCatLocMap" />
+          <EntitySet Name="OfferLocations" EntityType="OFFERDBModel.OfferLocation" />
+          <EntitySet Name="OfferLocOutletMaps" EntityType="OFFERDBModel.OfferLocOutletMap" />
+          <EntitySet Name="OfferReviews" EntityType="OFFERDBModel.OfferReview" />
+          <EntitySet Name="OffersInfoes" EntityType="OFFERDBModel.OffersInfo" />
+          <EntitySet Name="OfferViews" EntityType="OFFERDBModel.OfferView" />
+          <EntitySet Name="sysdiagrams" EntityType="OFFERDBModel.sysdiagram" />
+          <EntitySet Name="SysEnums" EntityType="OFFERDBModel.SysEnum" />
+          <EntitySet Name="SysUsers" EntityType="OFFERDBModel.SysUser" />
+          <AssociationSet Name="FK_OfferAvailOutlet_OfferLocOutletMap" Association="OFFERDBModel.FK_OfferAvailOutlet_OfferLocOutletMap">
+            <End Role="OfferLocOutletMap" EntitySet="OfferLocOutletMaps" />
+            <End Role="OfferAvailOutlet" EntitySet="OfferAvailOutlets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferAvailOutlet_OffersInfo" Association="OFFERDBModel.FK_OfferAvailOutlet_OffersInfo">
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+            <End Role="OfferAvailOutlet" EntitySet="OfferAvailOutlets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Offer_Cat_LocMap_OfferCategory" Association="OFFERDBModel.FK_Offer_Cat_LocMap_OfferCategory">
+            <End Role="OfferCategory" EntitySet="OfferCategories" />
+            <End Role="OfferCatLocMap" EntitySet="OfferCatLocMaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferCategory_SysUser" Association="OFFERDBModel.FK_OfferCategory_SysUser">
+            <End Role="SysUser" EntitySet="SysUsers" />
+            <End Role="OfferCategory" EntitySet="OfferCategories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferCategory_SysUserModified" Association="OFFERDBModel.FK_OfferCategory_SysUserModified">
+            <End Role="SysUser" EntitySet="SysUsers" />
+            <End Role="OfferCategory" EntitySet="OfferCategories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_OfferCategory" Association="OFFERDBModel.FK_OffersInfo_OfferCategory">
+            <End Role="OfferCategory" EntitySet="OfferCategories" />
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Offer_Cat_LocMap_OfferLocation" Association="OFFERDBModel.FK_Offer_Cat_LocMap_OfferLocation">
+            <End Role="OfferLocation" EntitySet="OfferLocations" />
+            <End Role="OfferCatLocMap" EntitySet="OfferCatLocMaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocation_SysUserCreated" Association="OFFERDBModel.FK_OfferLocation_SysUserCreated">
+            <End Role="SysUser" EntitySet="SysUsers" />
+            <End Role="OfferLocation" EntitySet="OfferLocations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocation_SysUserModified" Association="OFFERDBModel.FK_OfferLocation_SysUserModified">
+            <End Role="SysUser" EntitySet="SysUsers" />
+            <End Role="OfferLocation" EntitySet="OfferLocations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocOutletMap_OfferLocation" Association="OFFERDBModel.FK_OfferLocOutletMap_OfferLocation">
+            <End Role="OfferLocation" EntitySet="OfferLocations" />
+            <End Role="OfferLocOutletMap" EntitySet="OfferLocOutletMaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_OfferLocation" Association="OFFERDBModel.FK_OffersInfo_OfferLocation">
+            <End Role="OfferLocation" EntitySet="OfferLocations" />
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocOutletMap_SysUser" Association="OFFERDBModel.FK_OfferLocOutletMap_SysUser">
+            <End Role="SysUser" EntitySet="SysUsers" />
+            <End Role="OfferLocOutletMap" EntitySet="OfferLocOutletMaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferLocOutletMap_SysUserModified" Association="OFFERDBModel.FK_OfferLocOutletMap_SysUserModified">
+            <End Role="SysUser" EntitySet="SysUsers" />
+            <End Role="OfferLocOutletMap" EntitySet="OfferLocOutletMaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferReview_OffersInfo" Association="OFFERDBModel.FK_OfferReview_OffersInfo">
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+            <End Role="OfferReview" EntitySet="OfferReviews" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_SysEnum" Association="OFFERDBModel.FK_OffersInfo_SysEnum">
+            <End Role="SysEnum" EntitySet="SysEnums" />
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_SysEnum1" Association="OFFERDBModel.FK_OffersInfo_SysEnum1">
+            <End Role="SysEnum" EntitySet="SysEnums" />
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_SysUser" Association="OFFERDBModel.FK_OffersInfo_SysUser">
+            <End Role="SysUser" EntitySet="SysUsers" />
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OffersInfo_SysUserModified" Association="OFFERDBModel.FK_OffersInfo_SysUserModified">
+            <End Role="SysUser" EntitySet="SysUsers" />
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfferView_OffersInfo" Association="OFFERDBModel.FK_OfferView_OffersInfo">
+            <End Role="OffersInfo" EntitySet="OffersInfoes" />
+            <End Role="OfferView" EntitySet="OfferViews" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SysUser_SysEnum" Association="OFFERDBModel.FK_SysUser_SysEnum">
+            <End Role="SysEnum" EntitySet="SysEnums" />
+            <End Role="SysUser" EntitySet="SysUsers" />
+          </AssociationSet>
+          <EntitySet Name="OfferFeedbacks" EntityType="OFFERDBModel.OfferFeedback" />
+        </EntityContainer>
+        <EntityType Name="OfferAvailOutlet">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OfferId" Type="Int64" Nullable="false" />
+          <Property Name="OutletID" Type="Int64" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="OfferLocOutletMap" Relationship="OFFERDBModel.FK_OfferAvailOutlet_OfferLocOutletMap" FromRole="OfferAvailOutlet" ToRole="OfferLocOutletMap" />
+          <NavigationProperty Name="OffersInfo" Relationship="OFFERDBModel.FK_OfferAvailOutlet_OffersInfo" FromRole="OfferAvailOutlet" ToRole="OffersInfo" />
+        </EntityType>
+        <EntityType Name="OfferCategory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CategoryIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="OfferCatLocMaps" Relationship="OFFERDBModel.FK_Offer_Cat_LocMap_OfferCategory" FromRole="OfferCategory" ToRole="OfferCatLocMap" />
+          <NavigationProperty Name="SysUser" Relationship="OFFERDBModel.FK_OfferCategory_SysUser" FromRole="OfferCategory" ToRole="SysUser" />
+          <NavigationProperty Name="SysUser1" Relationship="OFFERDBModel.FK_OfferCategory_SysUserModified" FromRole="OfferCategory" ToRole="SysUser" />
+          <NavigationProperty Name="OffersInfoes" Relationship="OFFERDBModel.FK_OffersInfo_OfferCategory" FromRole="OfferCategory" ToRole="OffersInfo" />
+        </EntityType>
+        <EntityType Name="OfferCatLocMap">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryID" Type="Int64" Nullable="false" />
+          <Property Name="LocationID" Type="Int64" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int64" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="OfferCategory" Relationship="OFFERDBModel.FK_Offer_Cat_LocMap_OfferCategory" FromRole="OfferCatLocMap" ToRole="OfferCategory" />
+          <NavigationProperty Name="OfferLocation" Relationship="OFFERDBModel.FK_Offer_Cat_LocMap_OfferLocation" FromRole="OfferCatLocMap" ToRole="OfferLocation" />
+        </EntityType>
+        <EntityType Name="OfferLocation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LocationName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="OfferCatLocMaps" Relationship="OFFERDBModel.FK_Offer_Cat_LocMap_OfferLocation" FromRole="OfferLocation" ToRole="OfferCatLocMap" />
+          <NavigationProperty Name="SysUser" Relationship="OFFERDBModel.FK_OfferLocation_SysUserCreated" FromRole="OfferLocation" ToRole="SysUser" />
+          <NavigationProperty Name="SysUser1" Relationship="OFFERDBModel.FK_OfferLocation_SysUserModified" FromRole="OfferLocation" ToRole="SysUser" />
+          <NavigationProperty Name="OfferLocOutletMaps" Relationship="OFFERDBModel.FK_OfferLocOutletMap_OfferLocation" FromRole="OfferLocation" ToRole="OfferLocOutletMap" />
+          <NavigationProperty Name="OffersInfoes" Relationship="OFFERDBModel.FK_OffersInfo_OfferLocation" FromRole="OfferLocation" ToRole="OffersInfo" />
+        </EntityType>
+        <EntityType Name="OfferLocOutletMap">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int64" Nullable="false" />
+          <Property Name="LocationID" Type="Int64" Nullable="false" />
+          <Property Name="OutletName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OutletAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="OfferAvailOutlets" Relationship="OFFERDBModel.FK_OfferAvailOutlet_OfferLocOutletMap" FromRole="OfferLocOutletMap" ToRole="OfferAvailOutlet" />
+          <NavigationProperty Name="OfferLocation" Relationship="OFFERDBModel.FK_OfferLocOutletMap_OfferLocation" FromRole="OfferLocOutletMap" ToRole="OfferLocation" />
+          <NavigationProperty Name="SysUser" Relationship="OFFERDBModel.FK_OfferLocOutletMap_SysUser" FromRole="OfferLocOutletMap" ToRole="SysUser" />
+          <NavigationProperty Name="SysUser1" Relationship="OFFERDBModel.FK_OfferLocOutletMap_SysUserModified" FromRole="OfferLocOutletMap" ToRole="SysUser" />
+        </EntityType>
+        <EntityType Name="OfferReview">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceID" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OfferReviewerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OfferID" Type="Int64" Nullable="false" />
+          <Property Name="OfferReview1" Type="Int32" />
+          <Property Name="OfferIsFollow" Type="Boolean" />
+          <Property Name="OfferIsFavorite" Type="Boolean" />
+          <Property Name="OfferReviewComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="OffersInfo" Relationship="OFFERDBModel.FK_OfferReview_OffersInfo" FromRole="OfferReview" ToRole="OffersInfo" />
+        </EntityType>
+        <EntityType Name="OffersInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PostName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="OfferCat" Type="Int64" Nullable="false" />
+          <Property Name="OfferLoc" Type="Int64" Nullable="false" />
+          <Property Name="OfferStartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OfferEndDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OfferDiscountAmt" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="OfferStatus" Type="Int64" Nullable="false" />
+          <Property Name="OfferDetails" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OfferImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OfferFeatureVal" Type="Int64" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="OfferAvailOutlets" Relationship="OFFERDBModel.FK_OfferAvailOutlet_OffersInfo" FromRole="OffersInfo" ToRole="OfferAvailOutlet" />
+          <NavigationProperty Name="OfferCategory" Relationship="OFFERDBModel.FK_OffersInfo_OfferCategory" FromRole="OffersInfo" ToRole="OfferCategory" />
+          <NavigationProperty Name="OfferLocation" Relationship="OFFERDBModel.FK_OffersInfo_OfferLocation" FromRole="OffersInfo" ToRole="OfferLocation" />
+          <NavigationProperty Name="OfferReviews" Relationship="OFFERDBModel.FK_OfferReview_OffersInfo" FromRole="OffersInfo" ToRole="OfferReview" />
+          <NavigationProperty Name="SysEnum" Relationship="OFFERDBModel.FK_OffersInfo_SysEnum" FromRole="OffersInfo" ToRole="SysEnum" />
+          <NavigationProperty Name="SysEnum1" Relationship="OFFERDBModel.FK_OffersInfo_SysEnum1" FromRole="OffersInfo" ToRole="SysEnum" />
+          <NavigationProperty Name="SysUser" Relationship="OFFERDBModel.FK_OffersInfo_SysUser" FromRole="OffersInfo" ToRole="SysUser" />
+          <NavigationProperty Name="SysUser1" Relationship="OFFERDBModel.FK_OffersInfo_SysUserModified" FromRole="OffersInfo" ToRole="SysUser" />
+          <NavigationProperty Name="OfferViews" Relationship="OFFERDBModel.FK_OfferView_OffersInfo" FromRole="OffersInfo" ToRole="OfferView" />
+        </EntityType>
+        <EntityType Name="OfferView">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceID" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OfferID" Type="Int64" Nullable="false" />
+          <Property Name="OfferIsView" Type="Boolean" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="OffersInfo" Relationship="OFFERDBModel.FK_OfferView_OffersInfo" FromRole="OfferView" ToRole="OffersInfo" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SysEnum">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EnumType" Type="Int32" Nullable="false" />
+          <Property Name="EnumName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EnumValue" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="OffersInfoes" Relationship="OFFERDBModel.FK_OffersInfo_SysEnum" FromRole="SysEnum" ToRole="OffersInfo" />
+          <NavigationProperty Name="OffersInfoes1" Relationship="OFFERDBModel.FK_OffersInfo_SysEnum1" FromRole="SysEnum" ToRole="OffersInfo" />
+          <NavigationProperty Name="SysUsers" Relationship="OFFERDBModel.FK_SysUser_SysEnum" FromRole="SysEnum" ToRole="SysUser" />
+        </EntityType>
+        <EntityType Name="SysUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserType" Type="Int64" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ContactNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Website" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyLogoUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="OfferCategories" Relationship="OFFERDBModel.FK_OfferCategory_SysUser" FromRole="SysUser" ToRole="OfferCategory" />
+          <NavigationProperty Name="OfferCategories1" Relationship="OFFERDBModel.FK_OfferCategory_SysUserModified" FromRole="SysUser" ToRole="OfferCategory" />
+          <NavigationProperty Name="OfferLocations" Relationship="OFFERDBModel.FK_OfferLocation_SysUserCreated" FromRole="SysUser" ToRole="OfferLocation" />
+          <NavigationProperty Name="OfferLocations1" Relationship="OFFERDBModel.FK_OfferLocation_SysUserModified" FromRole="SysUser" ToRole="OfferLocation" />
+          <NavigationProperty Name="OfferLocOutletMaps" Relationship="OFFERDBModel.FK_OfferLocOutletMap_SysUser" FromRole="SysUser" ToRole="OfferLocOutletMap" />
+          <NavigationProperty Name="OfferLocOutletMaps1" Relationship="OFFERDBModel.FK_OfferLocOutletMap_SysUserModified" FromRole="SysUser" ToRole="OfferLocOutletMap" />
+          <NavigationProperty Name="OffersInfoes" Relationship="OFFERDBModel.FK_OffersInfo_SysUser" FromRole="SysUser" ToRole="OffersInfo" />
+          <NavigationProperty Name="OffersInfoes1" Relationship="OFFERDBModel.FK_OffersInfo_SysUserModified" FromRole="SysUser" ToRole="OffersInfo" />
+          <NavigationProperty Name="SysEnum" Relationship="OFFERDBModel.FK_SysUser_SysEnum" FromRole="SysUser" ToRole="SysEnum" />
+        </EntityType>
+        <Association Name="FK_OfferAvailOutlet_OfferLocOutletMap">
+          <End Type="OFFERDBModel.OfferLocOutletMap" Role="OfferLocOutletMap" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferAvailOutlet" Role="OfferAvailOutlet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferLocOutletMap">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferAvailOutlet">
+              <PropertyRef Name="OutletID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferAvailOutlet_OffersInfo">
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferAvailOutlet" Role="OfferAvailOutlet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OffersInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferAvailOutlet">
+              <PropertyRef Name="OfferId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Offer_Cat_LocMap_OfferCategory">
+          <End Type="OFFERDBModel.OfferCategory" Role="OfferCategory" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferCatLocMap" Role="OfferCatLocMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferCategory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferCatLocMap">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferCategory_SysUser">
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferCategory" Role="OfferCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferCategory">
+              <PropertyRef Name="CreatedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferCategory_SysUserModified">
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="0..1" />
+          <End Type="OFFERDBModel.OfferCategory" Role="OfferCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferCategory">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_OfferCategory">
+          <End Type="OFFERDBModel.OfferCategory" Role="OfferCategory" Multiplicity="1" />
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferCategory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="OfferCat" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Offer_Cat_LocMap_OfferLocation">
+          <End Type="OFFERDBModel.OfferLocation" Role="OfferLocation" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferCatLocMap" Role="OfferCatLocMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferLocation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferCatLocMap">
+              <PropertyRef Name="LocationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocation_SysUserCreated">
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferLocation" Role="OfferLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocation">
+              <PropertyRef Name="CreatedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocation_SysUserModified">
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="0..1" />
+          <End Type="OFFERDBModel.OfferLocation" Role="OfferLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocation">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocOutletMap_OfferLocation">
+          <End Type="OFFERDBModel.OfferLocation" Role="OfferLocation" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferLocOutletMap" Role="OfferLocOutletMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferLocation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocOutletMap">
+              <PropertyRef Name="LocationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_OfferLocation">
+          <End Type="OFFERDBModel.OfferLocation" Role="OfferLocation" Multiplicity="1" />
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OfferLocation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="OfferLoc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocOutletMap_SysUser">
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferLocOutletMap" Role="OfferLocOutletMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocOutletMap">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferLocOutletMap_SysUserModified">
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="0..1" />
+          <End Type="OFFERDBModel.OfferLocOutletMap" Role="OfferLocOutletMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferLocOutletMap">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferReview_OffersInfo">
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferReview" Role="OfferReview" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OffersInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferReview">
+              <PropertyRef Name="OfferID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_SysEnum">
+          <End Type="OFFERDBModel.SysEnum" Role="SysEnum" Multiplicity="1" />
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysEnum">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="OfferStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_SysEnum1">
+          <End Type="OFFERDBModel.SysEnum" Role="SysEnum" Multiplicity="0..1" />
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysEnum">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="OfferFeatureVal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_SysUser">
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="1" />
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="CreatedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OffersInfo_SysUserModified">
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="0..1" />
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OffersInfo">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfferView_OffersInfo">
+          <End Type="OFFERDBModel.OffersInfo" Role="OffersInfo" Multiplicity="1" />
+          <End Type="OFFERDBModel.OfferView" Role="OfferView" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OffersInfo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OfferView">
+              <PropertyRef Name="OfferID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SysUser_SysEnum">
+          <End Type="OFFERDBModel.SysEnum" Role="SysEnum" Multiplicity="1" />
+          <End Type="OFFERDBModel.SysUser" Role="SysUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SysEnum">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SysUser">
+              <PropertyRef Name="UserType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="OfferFeedback">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Comment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OFFERDBModelStoreContainer" CdmEntityContainer="OFFERDBEntities1">
+          <EntitySetMapping Name="OfferAvailOutlets">
+            <EntityTypeMapping TypeName="OFFERDBModel.OfferAvailOutlet">
+              <MappingFragment StoreEntitySet="OfferAvailOutlet">
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="OutletID" ColumnName="OutletID" />
+                <ScalarProperty Name="OfferId" ColumnName="OfferId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OfferCategories">
+            <EntityTypeMapping TypeName="OFFERDBModel.OfferCategory">
+              <MappingFragment StoreEntitySet="OfferCategory">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CategoryIcon" ColumnName="CategoryIcon" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OfferCatLocMaps">
+            <EntityTypeMapping TypeName="OFFERDBModel.OfferCatLocMap">
+              <MappingFragment StoreEntitySet="OfferCatLocMap">
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OfferLocations">
+            <EntityTypeMapping TypeName="OFFERDBModel.OfferLocation">
+              <MappingFragment StoreEntitySet="OfferLocation">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OfferLocOutletMaps">
+            <EntityTypeMapping TypeName="OFFERDBModel.OfferLocOutletMap">
+              <MappingFragment StoreEntitySet="OfferLocOutletMap">
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="OutletAddress" ColumnName="OutletAddress" />
+                <ScalarProperty Name="OutletName" ColumnName="OutletName" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OfferReviews">
+            <EntityTypeMapping TypeName="OFFERDBModel.OfferReview">
+              <MappingFragment StoreEntitySet="OfferReview">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="OfferReviewComment" ColumnName="OfferReviewComment" />
+                <ScalarProperty Name="OfferIsFavorite" ColumnName="OfferIsFavorite" />
+                <ScalarProperty Name="OfferIsFollow" ColumnName="OfferIsFollow" />
+                <ScalarProperty Name="OfferReview1" ColumnName="OfferReview" />
+                <ScalarProperty Name="OfferID" ColumnName="OfferID" />
+                <ScalarProperty Name="OfferReviewerName" ColumnName="OfferReviewerName" />
+                <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OffersInfoes">
+            <EntityTypeMapping TypeName="OFFERDBModel.OffersInfo">
+              <MappingFragment StoreEntitySet="OffersInfo">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="OfferFeatureVal" ColumnName="OfferFeatureVal" />
+                <ScalarProperty Name="OfferImagePath" ColumnName="OfferImagePath" />
+                <ScalarProperty Name="OfferDetails" ColumnName="OfferDetails" />
+                <ScalarProperty Name="OfferStatus" ColumnName="OfferStatus" />
+                <ScalarProperty Name="OfferDiscountAmt" ColumnName="OfferDiscountAmt" />
+                <ScalarProperty Name="OfferEndDate" ColumnName="OfferEndDate" />
+                <ScalarProperty Name="OfferStartDate" ColumnName="OfferStartDate" />
+                <ScalarProperty Name="OfferLoc" ColumnName="OfferLoc" />
+                <ScalarProperty Name="OfferCat" ColumnName="OfferCat" />
+                <ScalarProperty Name="PostName" ColumnName="PostName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OfferViews">
+            <EntityTypeMapping TypeName="OFFERDBModel.OfferView">
+              <MappingFragment StoreEntitySet="OfferView">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="OfferIsView" ColumnName="OfferIsView" />
+                <ScalarProperty Name="OfferID" ColumnName="OfferID" />
+                <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="OFFERDBModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysEnums">
+            <EntityTypeMapping TypeName="OFFERDBModel.SysEnum">
+              <MappingFragment StoreEntitySet="SysEnum">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="EnumValue" ColumnName="EnumValue" />
+                <ScalarProperty Name="EnumName" ColumnName="EnumName" />
+                <ScalarProperty Name="EnumType" ColumnName="EnumType" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysUsers">
+            <EntityTypeMapping TypeName="OFFERDBModel.SysUser">
+              <MappingFragment StoreEntitySet="SysUser">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CompanyLogoUrl" ColumnName="CompanyLogoUrl" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OfferFeedbacks">
+            <EntityTypeMapping TypeName="OFFERDBModel.OfferFeedback">
+              <MappingFragment StoreEntitySet="OfferFeedback">
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

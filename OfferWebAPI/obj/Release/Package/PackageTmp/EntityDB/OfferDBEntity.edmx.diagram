@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="10d7e2294f00431c855ace1c93c1656e" Name="Diagram1">
+        <EntityTypeShape EntityType="OFFERDBModel.OfferAvailOutlet" Width="1.5" PointX="12.75" PointY="15" />
+        <EntityTypeShape EntityType="OFFERDBModel.OfferCategory" Width="1.5" PointX="5.25" PointY="14.125" />
+        <EntityTypeShape EntityType="OFFERDBModel.OfferCatLocMap" Width="1.5" PointX="7.5" PointY="19.5" />
+        <EntityTypeShape EntityType="OFFERDBModel.OfferLocation" Width="1.5" PointX="5.25" PointY="18.125" />
+        <EntityTypeShape EntityType="OFFERDBModel.OfferLocOutletMap" Width="1.5" PointX="10.5" PointY="16.375" />
+        <EntityTypeShape EntityType="OFFERDBModel.OfferReview" Width="1.5" PointX="9.75" PointY="21.625" />
+        <EntityTypeShape EntityType="OFFERDBModel.OffersInfo" Width="1.5" PointX="7.5" PointY="12.375" />
+        <EntityTypeShape EntityType="OFFERDBModel.OfferView" Width="1.5" PointX="9.75" PointY="12.125" />
+        <EntityTypeShape EntityType="OFFERDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OFFERDBModel.SysEnum" Width="1.5" PointX="0.75" PointY="9.125" />
+        <EntityTypeShape EntityType="OFFERDBModel.SysUser" Width="1.5" PointX="3" PointY="15" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferAvailOutlet_OfferLocOutletMap" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferAvailOutlet_OffersInfo" />
+        <AssociationConnector Association="OFFERDBModel.FK_Offer_Cat_LocMap_OfferCategory" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferCategory_SysUser" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferCategory_SysUserModified" />
+        <AssociationConnector Association="OFFERDBModel.FK_OffersInfo_OfferCategory" />
+        <AssociationConnector Association="OFFERDBModel.FK_Offer_Cat_LocMap_OfferLocation" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferLocation_SysUserCreated" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferLocation_SysUserModified" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferLocOutletMap_OfferLocation" />
+        <AssociationConnector Association="OFFERDBModel.FK_OffersInfo_OfferLocation" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferLocOutletMap_SysUser" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferLocOutletMap_SysUserModified" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferReview_OffersInfo" />
+        <AssociationConnector Association="OFFERDBModel.FK_OffersInfo_SysEnum" />
+        <AssociationConnector Association="OFFERDBModel.FK_OffersInfo_SysEnum1" />
+        <AssociationConnector Association="OFFERDBModel.FK_OffersInfo_SysUser" />
+        <AssociationConnector Association="OFFERDBModel.FK_OffersInfo_SysUserModified" />
+        <AssociationConnector Association="OFFERDBModel.FK_OfferView_OffersInfo" />
+        <AssociationConnector Association="OFFERDBModel.FK_SysUser_SysEnum" />
+        <EntityTypeShape EntityType="OFFERDBModel.OfferFeedback" Width="1.5" PointX="3.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
